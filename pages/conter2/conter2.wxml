@@ -1,0 +1,93 @@
+
+
+ <!-- 导航 -->
+<scroll-view scroll-x="true" class="ip_tab_comtainer">
+ <view class='menu-box '>
+  <view class='d-wbox fl'>
+   <text bindtap="change" data-index="1" class='dao2 fz02 {{class}}'>音频</text>
+</view>
+ <view class='d-wbox fr'>
+  <text bindtap="change" data-index="2" class='dao2 fz02 {{class01}}'>图文</text>
+</view>
+  </view>
+</scroll-view>
+ <view class="showon" hidden='{{value}}'>
+ <view class='yp-box1 dw'>
+ 
+ <swiper-item>
+ <view wx:if="{{signs==1}}" class='stfz01'>试听</view>
+    <view class="stop-icon dw" >
+    <image class='cz01' src='/images/cz01.png'></image> 
+ 
+    <image class='w-gp' src='/images/w-gp1.png'></image>
+    
+    <image class='play-fm {{classes}}'   src="{{pic}}" ></image>
+    
+    
+    
+    </view>
+    
+
+    <view class="cat-name">
+      {{name}}
+    </view>
+
+   <view class='play01'><image src='/images/play.png'     bindtap="{{playAction}}" data-index="{{bk_id}}" src="{{cdrom}}"></image></view>
+   <view class='jdt-box'>
+    <slider class="slider_middle" bindchange="changeSlide" bindtouchstart="start" bindtouchend="end" max="{{max}}" min="0" value="{{item}}" disabled="{{item.canSlider}}"  data-index="{{bk_id}}" block-size ="18" ></slider>
+                <text class="right_text">{{item.totalProcess}}</text>
+                <text class='fz22 fl'>{{starttime}}</text>
+                <text class='fz21 fr'>{{stoptime}}</text>
+   </view>             
+
+
+
+ 
+  </swiper-item>
+  
+
+ </view>
+
+ 
+
+
+
+ 
+</view>
+
+
+<view class="showup" hidden='{{val}}'>
+<view class='jy01 fl'>
+  <text class='fz12 fl'>荐  语</text>
+  <import src="../wxParse/wxParse.wxml" />
+  <template is="wxParse" data="{{wxParseData:Test.nodes}}" />
+</view>
+
+ <view class='jy01 fl dw'>
+  <text class='fz12 fl'>作者简介</text>
+  <view class='zz-t1 fl'><image src='{{data.bk_pic}}'></image></view>
+  <text class='fz20 fl'>{{data.bk_author}}</text>
+ <import src="../wxParse/wxParse.wxml" />
+  <template is="wxParse" data="{{wxParseData:Test1.nodes}}" />
+</view>
+
+
+<view class='jy01 fl'>
+  <text class='fz12 fl'>目录</text>
+  
+   <import src="../wxParse/wxParse.wxml" />
+  <template is="wxParse" data="{{wxParseData:Dir.nodes}}" />
+ 
+</view>
+
+
+<view class="{{signs == 2 ? 'jy01 fl':'jy01 f1  vip01'}}">
+  <text class='fz12 fl'>正文</text>
+  <import src="../wxParse/wxParse.wxml" />
+  <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+</view>
+  <!--成为vip-->
+ 
+</view>
+
+

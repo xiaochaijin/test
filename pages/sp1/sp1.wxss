@@ -1,0 +1,46 @@
+.fl{float: left;}
+.fr{float: right;}
+.dw{position: relative;}
+.fd{ position: absolute;}
+.c{clear: both;}
+.done{display: none;}
+.xian1{width: 100%; height: 5px; background-color: #f7f7f7;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #d5d5d5;}
+
+
+.kc-banner{width: 100%; height: 200px; top: 0px;left: 0px;}
+.n-banner01{width: 100%; height: 200px; }
+
+.sp-box{width: 100%; height: 200px; top: 0px;left: 0px;}
+.sp1{width: 100%; height: 200px;}
+.jx-bf{ width: 100%; height: 200px; top: 0px; left: 0px; background-color: #333; z-index: 999;}
+.bt1{background-color: #f7f7f7;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #d5d5d5; width: 90%; height: 40px; padding: 0px 5%; text-align: center; font-size: 16px; line-height: 40px;}
+.btn1{width: 30%;
+	background: #5fcaa6;
+  z-index:999;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	text-align: center;
+  font-size: 12px;
+  left: 50%;margin-left: -15%;top:40%;
+  }
+.fz01{ font-size: 14px; color: #333; line-height: 34px;}
+.f-bt1{width: 90%; padding: 0 5%; height: 30px; margin-top: 5px;}
+.fz02{ width: 100%; font-size: 14px; color: #333; line-height: 30px;}
+.kc-box{width: 90%; padding: 0 5%;  overflow: hidden;overflow-y: scroll; }
+.k-lc{width: 100%; margin-top: 15px; margin-bottom: 15px;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #d5d5d5; padding-bottom: 5px;}
+.tb1{ width: 20px; height: 20px; margin-top: 10px;}
+.pic1{ width: 20px; height: 20px;}
+.k-n{ margin-left: 10px; width: 70%; } 
+.x-bt{ font-size: 14px; color: #333; line-height: 20px; width: 100%; }
+.active01{color: #56bb98;}
+.fz03{font-size: 12px; color: #999; line-height: 20px;  width: 100%; }
+
+.r-btn1{ width: 20%;}
+.btn01{ background-color:#56bb98; font-size: 12px; line-height: 20px; padding: 0 10px; margin-left: 10px;border-radius:5px; color: #fff; margin-top: 10px; z-index: 9999;}
+
+.cs-btn{ background-color:#56bb98; font-size: 14px; line-height: 30px; border-radius:5px; color: #fff;  z-index: 9999; bottom: 15px;
+ width: 40%; text-align: center; left: 50%; margin-left: -20%;}
+ .cs-btn2{ background-color:#d8d8d8; font-size: 14px; line-height: 30px; border-radius:5px; color: #fff;  z-index: 9999; bottom: 15px;
+ width: 40%; text-align: center; left: 50%; margin-left: -20%;}

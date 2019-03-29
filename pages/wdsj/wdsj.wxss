@@ -1,0 +1,48 @@
+
+.fl{float: left;}
+.fr{ float: right;}
+.dw{ position: relative;}
+.fd{ position:absolute;}
+.done{ display: none;}
+
+.course-grp-name{
+  width: 100%;
+  height: 50rpx;
+  justify-content:space-between;
+  text-align:center;
+  background-color: #fff;
+  margin-top: 25rpx;
+}
+.course-grp-name text{
+  font-size: 40rpx;
+  line-height: 50rpx;
+  color: #000 ;
+ width: 100%;
+ text-align: center;
+  
+}
+.course-grp-name navigator{
+  font-size: 24rpx;
+  color:#999;
+  padding-right: 20rpx;
+}
+.ls-box{width: 100%; height: 40px;  border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #f4f4f4; }
+.wd-fz05{width: 100%; font-size: 18px;line-height: 24px; margin-top: 10px; text-align: center;  color: #333;}
+.wd-fz06{ width:460rpx; font-size:34rpx;text-align: left; margin-left: 10px; color: #333;  line-height: 24px;}
+.wd-fz07{ width:460rpx; font-size:24rpx;text-align: left; margin-left: 10px; color: #666;  line-height: 20px;margin-top: 10px; height: 80px; overflow: hidden;}
+
+.wd-fz08{ position: absolute; bottom: 25rpx; right:20rpx; width:460rpx; font-size:24rpx;text-align: left; margin-left: 10px; color: #999;  line-height: 20px;margin-top: 10px;}
+.top01{margin-top: 25rpx; padding-bottom: 25rpx;}
+.bottom01{border-bottom-width: 10px; border-bottom-style: solid; border-bottom-color:#D6D6D6; padding-bottom: 80rpx;}
+.pm-btn1{ width: 100%; background-color: #5fcaa6; text-align: center; font-size: 14px; line-height: 32px; height: 32px; float: left; z-index: 999; color: #fff; position: fixed; bottom: 0px;}
+
+.t1{ width: 55px; height: 18px; bottom: 25rpx; z-index: 999; position:absolute; right: 5px;background-color: #5fcaa6; text-align: center; font-size: 12px; line-height:18px; border-radius:5px; color: #fff;}
+.t2{ width: 55px; height: 18px; bottom: 25rpx; z-index: 999; position:absolute; right: 5px;background-color: #f00; text-align: center; font-size: 12px; line-height:18px; border-radius:5px; color: #fff;}
+
+.x01{border-bottom: 1px #f2f2f2 solid;}
+
+
+
+.tab-head{ width: 100%; height: 24px; margin-top:20px;}
+.link-zi1{ width:30%; text-align:center; line-height:24px; height:30px; font-size: 14px; color: #333; margin-left:13%;  }
+.xz-active{ font-size: 14px; color: #54c09c; width: 30%; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #54c09c;  margin-left:13%;}

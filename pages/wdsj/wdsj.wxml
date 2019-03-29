@@ -1,0 +1,71 @@
+
+ <!--banner-->
+
+ 
+ 
+  
+
+      <view class="course-grp-name flex">
+        <text>【我的书籍】</text>   
+     </view>
+     
+      <view class='tab-head'>
+            <view class="link-zi1 fl {{book1}}"  data-index="1" bindtap="book">书籍记录</view>
+            <view class="link-zi1 fl {{book2}}" data-index="2" bindtap="book">书包记录</view>
+      </view>
+      <view hidden='{{shuji}}'>
+       <view class="course-grp-item flex bottom01"> 
+        <block wx:for="{{list}}"  wx:for-index="idx" wx:for-item="item"    >
+          <navigator class=" flex-col dw top01 x01" url='/pages/conter1/conter1?at_id={{item.at_id}}&type=3'>
+            <view class='fl'><image src="{{item.at_logo}}"></image></view> 
+            <text class='wd-fz06 fl'>{{item.at_name}}</text>
+            <text class='wd-fz07 fl'>{{item.at_con}}</text>
+            <view class='wd-fz08 fl'><text class='fl'>{{item.rd_time}}收听</text></view>
+            <block wx:if="{{item.shouting==2}}">
+            <view class='fr t2'>未听完</view>
+            </block>
+            <block wx:if="{{item.shouting==1}}">
+            <view class='fr t1'>已听完</view>
+            </block>
+          </navigator>
+        </block>
+      </view>
+      </view>
+      <view hidden='{{shubao}}'>
+       <view class="course-grp-item flex bottom01"> 
+        <block wx:for="{{lists}}"  wx:for-index="idx" wx:for-item="item"    >
+          <navigator class=" flex-col dw top01 x01" url='/pages/conter2/conter2?bk_id={{item.bk_id}}&type=3'>
+            <view class='fl'><image src="{{item.bk_logo}}"></image></view> 
+            <text class='wd-fz06 fl'>{{item.bk_name}}</text>
+            <text class='wd-fz07 fl'>{{item.bk_con}}</text>
+            <view class='wd-fz08 fl'><text class='fl'>{{item.rd_time}}收听</text></view>
+            <block wx:if="{{item.shouting==2}}">
+            <view class='fr t2'>未听完</view>
+            </block>
+            <block wx:if="{{item.shouting==1}}"> 
+            <view class='fr t1'>已听完</view>
+            </block>
+          </navigator>
+        </block>
+      </view>
+      </view>
+       
+
+
+
+ 
+
+
+
+  <view class='jd-bj' hidden='{{play}}' >
+  <view class='play02' data-index="{{at_id}}" bindtap='{{action}}'><image src='{{palyaction}}'></image></view>
+  <navigator url="/pages/conter1/conter1?at_id={{at_id}}"><view class='bf-zi1'>{{at_name}}</view></navigator>
+  <view class='bf-time'>{{begin}}/{{endtime}}</view>
+  <view class='gb01' bindtap='wrong' hidden='{{wrong}}'><image src='/images/x01.png'></image></view>
+</view>
+
+
+
+
+
+  

@@ -1,0 +1,153 @@
+/**index.wxss**/
+.container{
+  height: 500rpx;
+  display: flex;
+}
+
+.pageContainer{
+  font-size: 14rpx;
+  color: #fff;
+}
+/*banner*/
+.bannerbox{
+  height: 300rpx;
+  width:750rpx;
+  position: relative;
+}
+.banner{
+  flex-direction:row;
+  align-items:center;
+}
+.bannerimg{
+  width:750rpx;
+  height: 300rpx;
+  display: none;
+}
+.banner .active{
+  width:750rpx;
+  height: 300rpx;
+  display: inline-block;
+}
+.banner-btn{
+  width:100%;
+  position: absolute;
+  bottom:20rpx;
+  flex-direction:row;
+  justify-content:center;
+}
+.banner-btn view{
+  width:15rpx;
+  height: 15rpx;
+  margin: 10rpx;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 50%;
+}
+.banner-btn  .active{
+  background-color: #9e9caa;
+}
+
+/*nav*/
+.nav{
+ flex-wrap:wrap;
+ justify-content:center;
+}
+.nav-item{
+  margin: 30rpx 50rpx 10rpx;
+  width:80rpx;
+}
+.nav-item image{
+  width:80rpx;
+  height: 80rpx;
+  border-radius:50%;
+}
+.nav-item text{
+  width:80rpx;
+  font-size: 16rpx;
+  color:#000;
+  display: inline-block;
+  text-align: center;
+}
+
+/*courseGrp*/
+.course-grp {
+  flex-wrap:wrap;
+  justify-content: space-around;
+} 
+.course-grp-name{
+  width: 750rpx;
+  height: 50rpx;
+  justify-content:space-between;
+  align-items:center;
+  background-color: #fff;
+  margin-top: 25rpx;
+}
+.course-grp-name text{
+  font-size: 40rpx;
+  line-height: 50rpx;
+  color: #000 ;
+  padding-left: 30rpx;
+  
+}
+.course-grp-name navigator{
+  font-size: 24rpx;
+  color: rgba(217, 217, 217, 0.8);
+  padding-right: 20rpx;
+}
+
+.course-grp-item navigator{
+  width:700rpx;
+}
+
+/*更多课程*/
+.navigator-course{
+  padding: 10rpx 0 40rpx;
+  color:#4bbc93;
+  font-size: 24rpx;
+}
+.color1{ color: #4bbc93!important;}
+
+.ip_tab_comtainer {
+    width: 100%;
+    padding: 20rpx 0 0;
+    white-space: nowrap;
+    display: flex;
+}
+.menu-box{ width: 140%; overflow: hidden; height: 70rpx; }
+.ul-box{height:60rpx; }
+.jg01{border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #5fcaa6;}
+.dao1{ margin-left: 15rpx; margin-right: 25rpx; float: left; height: 60rpx;}
+.fz01{ font-size: 32rpx; line-height: 60rpx;  font-weight: bold; }
+.dao2{ margin-left: 25rpx; margin-right: 25rpx; float: left; height: 60rpx;}
+.fz02{ font-size: 28rpx; line-height: 60rpx; }
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.x-book{width: 100%; height: 500rpx; background-color: #f5f6f8; position: relative;}
+.di1{position: absolute; width: 70%; height: 100rpx; left: 50%; margin-left: -35%; bottom: 40rpx;}
+.di1 image{width: 100%; height: 100%; }
+.x1-w{position: absolute; width: 300rpx; height: 100rpx; left: 50%; margin-left: -150rpx; top: 60rpx; }
+.x1{position: absolute; width: 300rpx; height: 10rpx; }
+.x1 image{width: 100%; height: 100%; }
+.fz03{ width:300rpx; font-size: 32rpx;text-align: center;}
+.fz04{ width:300rpx; font-size: 24rpx;text-align: center; color: #b4b6b5;}
+.fl{float: left;}
+.fr{ float: right;}
+.dw{ position: relative;}
+.tj-box1{position: absolute; width: 60%; left: 50%; margin-left: -30%; bottom: 90rpx; z-index: 999;}
+.tu1{ width: 160rpx; height: 237rpx; margin-left: 20rpx;}
+.tu1 image{width: 100%; height: 100%;}
+
+.fz05{ width:240rpx; font-size:16px; text-align: center; margin-left: 10px; height: 26px;}
+.fz06{ width:240rpx; font-size: 24rpx;text-align: center; margin-left: 10px;}
+.fz07{ width:240rpx; font-size: 24rpx;text-align: center; margin-left: 10px; color: #666;  line-height: 30px;}
+.fz08{width:730rpx; font-size: 24rpx;text-align: left; padding-left: 30rpx;color: #666;  line-height: 30px;}
+.fz09{ width:460rpx; height:60rpx; font-size:34rpx;text-align: left; margin-left: 10px; color: #333;  line-height: 30px;}
+
+
+.fz10{ width:460rpx; font-size:24rpx;text-align: left; margin-left: 10px; color: #666;  line-height: 20px;margin-top: 10px; height:80px; overflow: hidden; }
+
+.fz11{ position: absolute; bottom: 0rpx; right:20rpx; width:460rpx; font-size:24rpx;text-align: left; margin-left: 10px; color: #999;  line-height: 20px;margin-top: 10px;}
+.top01{margin-top: 25rpx; margin-bottom: 25rpx;}
+.bottom01{border-bottom-width: 20px; border-bottom-style: solid; border-bottom-color: #f5f6f8; padding-bottom: 25rpx;}

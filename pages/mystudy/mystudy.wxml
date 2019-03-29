@@ -1,0 +1,109 @@
+<view class='wd-bj dw'>
+
+  <view class='top-bj'><image src='/images/wd-bj.jpg'></image></view>
+  <view class='tx01 fd'><image src='{{pic}}'></image></view>
+  <text class='wd-fz01 fl fd'>{{name}}</text>
+  <view class='wd-fz02 fl fd' wx:if="{{type==0}}">
+  <text class='hy-fz01 fl'>非VIP用户 </text>
+  <text wx:if="{{type>0}}" class='hy-fz01 fl'>还剩{{vip}}天</text>
+  </view>
+  <view class='wd-fz02 fl fd' wx:else>
+  <text class='hy-fz01 fl'>{{company_name}} </text>
+  <text wx:if="{{type>0}}" class='hy-fz01 fl'>还剩{{vip}}天</text>
+  </view>
+  
+  
+  <!--<navigator url="/pages/zfy/zfy"><button class='fl fd btn1'><image src='/images/btn-vip.png'></image></button></navigator>-->
+</view>
+
+<!-- 个人 -->
+<view class='{{person}}'>
+  <view class='wd-box1 r-x fl'>
+  <text class='wd-fz03 fl'>{{days}}天</text>
+  <text class='wd-fz04 fl'>加入创易读书会</text>
+  </view>
+
+  <view class='wd-box1 fl'>
+  <text class='wd-fz03 fl'>{{num}}本</text>
+  <text class='wd-fz04 fl'>累计收听</text> 
+  </view>
+</view>
+
+<!-- 企业 -->
+<view class='{{company}}'>
+  <view class='wd-box2 r-x1 fl'>
+  <text class='wd-fz03 fl'>{{days}}天</text>
+  <text class='wd-fz04 fl'>加入创易读书会</text>
+  </view>
+
+  <view class='wd-box2 r-x1 fl'>
+  <text class='wd-fz03 fl'>{{num}}本</text>
+  <text class='wd-fz04 fl'>累计收听</text>
+  </view>
+
+  <view class='wd-box2 fl'>
+  <text class='wd-fz03 fl'>{{count}}本</text> 
+  <text class='wd-fz04 fl'>剩余未收听</text>
+  </view>
+</view> 
+
+<button open-type="share" class='fl fx-btn1'><image src='/images/fx-btn1.png'></image></button>
+<!-- 个人 -->
+<view class='{{person}}'>
+    <view class='ls-box fl'>
+      <text class='wd-fz05 fl'> 历史</text> 
+    </view>
+      <view class="course-grp-item flex bottom01"> 
+        <block wx:for="{{list}}"  wx:for-index="idx" wx:for-item="item"    >
+          <navigator class=" flex-col dw top01" url='/pages/conter1/conter1?at_id={{item.at_id}}&type=3'>
+            <view class='fl'><image src="{{item.at_logo}}"></image></view> 
+            <text class='wd-fz06 fl'>{{item.at_name}}</text>
+            <text class='wd-fz07 fl'>{{item.at_con}}</text>
+            <view class='wd-fz08 fl'><text class='fl'>{{item.rd_time}}收听</text></view>
+          
+            <block wx:if="{{item.shouting==1}}">
+            <view class='fr t2'>未听完</view> 
+            </block>
+            <block wx:if="{{item.shouting==2}}">
+            <view class='fr t1'>已听完</view>
+            </block>
+          </navigator>
+        </block>
+      </view>
+</view>
+<!-- 企业 -->
+
+<view class='xx-box fl {{company}}'>
+  <view class='xx-bt'>
+    学习中心
+  </view>
+
+  <view class='wd-d1'>
+    <navigator class='fl wd-tb dw' url='/pages/wdkc/wdkc'>
+     <image src='/images/wd-tb01.png' class='tb1 fl'></image>
+     <text class='xx-fz01 fl'>我的课程</text>
+    </navigator>
+
+    <navigator class='fl wd-tb dw' url='/pages/wdsj/wdsj'>
+     <image src='/images/wd-tb02.png' class='tb1 fl'></image>
+     <text class='xx-fz01 fl'>我的书籍</text>
+    </navigator>
+
+    <navigator url="/pages/xxjl/xxjl" class='fl wd-tb dw'>
+     <image src='/images/wd-tb03.png' class='tb1 fl'></image>
+     <text class='xx-fz01 fl'>学习记录</text>
+    </navigator>
+  </view>
+
+</view>
+
+
+
+
+
+<view class='jd-bj' hidden='{{play}}' >
+  <view class='play02' bindtap='{{action}}'><image src='{{palyaction}}'></image></view>
+  <navigator url="/pages/conter1/conter1?at_id={{at_id}}"><view class='bf-zi1'>{{at_name}}</view></navigator>
+  <view class='bf-time'>{{begin}}/{{endtime}}</view>
+  <view class='gb01' bindtap='wrong' hidden='{{wrong}}'><image src='/images/x01.png'></image></view>
+</view>

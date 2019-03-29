@@ -1,0 +1,33 @@
+
+
+ <!-- 导航 -->
+
+
+<view bindtap="search" class='sc-box dw'>
+    <view class='sc-zi1'>搜索相关书籍</view>
+    <view class='sc-t1 fd'><image src='/images/sc01.png' class='sc-tb'></image></view>
+  </view>
+<view class="course-grp bottom01" >
+
+      <view class="course-grp-item flex">
+      
+      <block wx:for="{{data}}"  wx:for-index="idx" wx:for-item="item">
+     
+       
+          <navigator class=" flex-col dw top01" url="/pages/conter1/conter1?at_id={{item.at_id}}">
+            <view  class='fl'><image src="{{item.at_logo}}"></image></view> 
+            <text class='fz09 fl'>{{item.at_name}}</text>
+            <text class='fz10 fl'>{{item.at_con}}</text>
+            <view class='fz11 fl'><text class='fl'>{{item.at_creatime}}上架</text><text wx:if="{{item.at_num==null}}" class='fr'>0次收听</text><text wx:else class='fr'>{{item.at_num}}次收听</text></view>
+          </navigator>
+        
+         
+        </block>
+     
+         
+      </view>
+  </view>
+  
+
+
+ 

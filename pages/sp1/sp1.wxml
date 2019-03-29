@@ -1,0 +1,57 @@
+
+<view class='kc-banner {{banner}}'>
+ <image src='{{list[0].banner}}' class='n-banner01'></image>
+
+
+</view>
+
+
+<view class='sp-box dw {{hidden}}'>
+   <video id="myVideo" src="{{path}}"  binderror="videoErrorCallback" bindpause="pause"  bindtimeupdate="timeupdate" bindended="end"  class="sp1 fd" initial-time="{{seek}}" >
+   
+   
+ 
+  </video>
+</view>	 
+
+
+<view class='bt1'> 
+  <text class='fz01'>{{list[0].name}}</text>
+</view>
+
+
+
+<view class='kc-box'> 
+ <block wx:for="{{list[0].courselist}}" wx:for-index="idx" wx:for-item="item">
+  <view class="k-lc fl">
+    <view class="tb1 fl"><image class="pic1"src="/images/bf01.png"></image></view>
+    <view class="fl k-n" data-index="10" data-top="0">
+    <text class="x-bt fl active01">{{item.name}}</text>
+    <text class="fz03 fl">{{item.introduct}}</text>
+    </view>
+    
+    <view class='r-btn1 fr'>
+    
+    <block wx:if="{{list.sign==0}}">
+      <view bindtap="play" class='btn01 fl' data-index="{{item.id}}" data-type="1">试听</view>    
+      </block>
+      <block wx:else>
+      <view bindtap="play" class='btn01 fl' data-index="{{item.id}}" data-type="2">播放</view>    
+      </block>
+    </view>
+  </view>
+  </block> 
+
+ 
+
+    
+</view>
+<block wx:if="{{list.sign!=0}}">
+<block wx:if="{{list.types==0}}">
+<navigator class='cs-btn fd' url='/pages/dtk-st/dtk-st?id={{list[0].id}}'>开始测试</navigator>
+</block>
+<block wx:else>
+<view class='cs-btn2 fd'>已完成测试</view> 
+</block>
+
+</block> 

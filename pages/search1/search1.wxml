@@ -1,0 +1,17 @@
+
+
+
+<view class='w-box1 dw'>
+ <input class='fl sc-input'placeholder="请搜索" bindinput="bindinput"></input>
+ <view class='btn01 fl' bindtap='search' >搜索</view>
+ <view class='sc-t1 fd'><image src='/images/sc01.png' class='sc-tb'></image></view>
+</view>
+
+<view class="title01 fl">热门搜索</view>
+	<view class="fl">
+  
+  <block wx:for="{{keys}}" wx:for-index="idx" wx:for-item="item" >
+			<navigator  url="/pages/sp1/sp1?id={{item.id}}" class="mui-btn mui-btn-outlined fl">{{item.name}}</navigator>
+			
+  </block>
+   </view>

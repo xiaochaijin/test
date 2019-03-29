@@ -1,0 +1,34 @@
+
+
+ <!-- 导航 -->
+
+ 
+
+<view class="course-grp bottom01" >
+
+      <view class="course-grp-item flex">    
+      <block wx:for="{{book}}"  wx:for-index="idx" wx:for-item="item"    >
+     
+       
+          <navigator class=" flex-col dw top01" url="/pages/conter2/conter2?bk_id={{item.bk_id}}">
+            <view  class='fl'><image src="{{item.bk_logo}}"></image></view> 
+            <text class='fz09 fl'>{{item.bk_name}}</text>
+            <text class='fz10 fl'>{{item.bk_con}}</text>
+            <view class='fz11 fl'><text class='fl'>{{item.bk_creatime}}上架</text><text wx:if="{{item.bk_num==null}}" class='fr'>0次收听</text><text wx:else class='fr'>{{item.bk_num}}次收听</text></view>
+          </navigator>
+          
+         
+        </block>
+     
+          
+      </view>
+  </view>
+  <view class='jd-bj' hidden='{{play}}' >
+  <view class='play02' bindtap='{{action}}'><image src='{{palyaction}}'></image></view>
+  <navigator url="/pages/conter1/conter1?at_id={{at_id}}"><view class='bf-zi1'>{{at_name}}</view></navigator>
+  <view class='bf-time'>{{begin}}/{{endtime}}</view>
+  <view class='gb01' bindtap='wrong' hidden='{{wrong}}'><image src='/images/x01.png'></image></view>
+</view>
+
+
+ 

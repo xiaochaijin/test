@@ -1,0 +1,118 @@
+
+
+
+
+<view class="{{t1}}">
+
+<swiper current="{{activeIndex}}" currentItemId="{{}}" class="swiper-box" duration="100" bindchange="bindChange">
+ <block wx:for="{{one_arr}}"   wx:for-index="idx" wx:for-item="item">
+ <swiper-item class="swiper-item" item-id="1" catchtap="callback">
+ <view class="slide-view">
+   <view>
+      <view class='tm-zi1'>
+      {{idx*1+1}}、（单选题）{{item.title}}
+      </view>
+      <block wx:for="{{item.answer}}"  wx:for-index="idxs" wx:for-item="items">      
+      <view class='xx-1 fl'>
+        <text class='xx-zi1 fl {{select==idxs?"active01":""}}' data-index="{{items.id}}"  data-id="{{item.id}}" data-wai="{{idx}}" data-tf="{{items.is_true}}" data-zqda="{{item.zqda}}" data-top="{{idxs}}" bindtap='xuanze'>{{items.tag}}</text>
+        <text class='xx-zi2 fl'>{{items.content}}</text>
+      </view>
+      </block>
+      
+    </view>
+  <!-- 答案解析 -->
+  
+
+  <!-- 答案解析 end -->
+</view>
+ </swiper-item>
+ </block>
+
+
+<swiper-item class="swiper-item">
+
+    <view class="slide-view ">
+     
+
+     <view class='jj-btn1' bindtap='jiaojuan'>交卷</view>
+      
+  </view>
+  
+ </swiper-item>
+
+</swiper>
+</view>
+<view class="{{t2}}">
+<view class="fs-box dw">
+   <view class='fs-tu1 fd'>
+    <image src='/images/dt-bj.png' mode="widthFix" style='width:100%'></image>
+    <text class='fs-z1 fd'>{{score}}分</text> 
+   </view>
+
+   
+
+</view>
+
+<view class='dtk-box'>
+  <view class='ts-box'>
+    <view class='left-zi1 fl'>答题卡</view>
+    <view class='ts1 fr'>
+      <view class='green fl'></view>
+      <text class='d1 fl'>正确</text> 
+    </view>
+    <view class='ts1 fr'>
+      <view class='red fl'></view>
+      <text class='d1 fl'>错误</text> 
+    </view>
+  </view>
+ 
+ <view class='xx-k'>
+ <view wx:for="{{data}}"  wx:for-index="idx" wx:for-item="item">
+      <view class='kw-box fl'>
+      <block wx:if="{{item.is_true==1}}">
+        <view class='k1 se1 '>{{idx*1+1}}</view>
+      
+      </block>
+      <block wx:else>
+        <view class='k1 se2 '>{{idx*1+1}}</view>
+      
+      </block>
+      </view>
+      
+    </view>
+ 
+ </view>
+
+</view>
+
+
+<view>
+
+
+     
+</view>
+<block wx:for="{{topic}}"  wx:for-index="idx" wx:for-item="item">
+<view class='tm-zi1 fl'> {{idx*1+1}}、（单选题）{{item.title}}  </view>  
+  <!-- 答案解析 -->
+    <view class='jx-box fl'>
+    <view class='zi-box fl'>
+      <text class='bt02'>答案解析</text>
+      <text class='js-fz03 fl'>
+      {{item.jiexi}}
+      </text>    
+    </view>
+    </view>
+  <!-- 答案解析 end -->
+  </block>
+</view> 
+
+
+
+
+
+
+
+
+
+
+

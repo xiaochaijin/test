@@ -1,0 +1,306 @@
+/**index.wxss**/
+.container{
+  height: 500rpx;
+  
+}
+
+.pageContainer{
+  font-size: 14rpx;
+  color: #fff;
+}
+
+.menu-box{ width: 100%; overflow: hidden; height: 70rpx; }
+.d-wbox{width: 50%; position: relative;}
+.ul-box{height:60rpx; }
+.jg01{border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #5fcaa6;}
+.dao2{height: 60rpx;text-align: center;position: absolute; width: 30%; left: 50%; margin-left: -15%}
+.fz02{ font-size: 28rpx; line-height: 60rpx; }
+.x-x1{border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #f5f6f8; padding-bottom: 25rpx;}
+
+.fl{float: left;}
+.fr{ float: right;}
+.dw{ position: relative;}
+
+.yp-box1{ width: 100%; height: 95%; position: absolute; top: 5%; left: 0; overflow: hidden;}
+.fx-01{background: #f5f6f8; width: 100%; height: 400rpx;}
+
+.fx-01 image{
+  width:200rpx;
+  height: 300rpx;
+  float: left;
+  border-radius:5px;
+}
+
+
+
+.pro{width:90%;margin:0 auto;}
+
+.fz09{ width:350rpx; height:60rpx; font-size:28rpx;text-align: left; margin-left: 10px; color: #333;  line-height: 30px;}
+.fz10{ width:350rpx; font-size:24rpx;text-align: left; margin-left: 10px; color: #666;  line-height: 20px;margin-top: 10px;height:80px; overflow: hidden; }
+
+.fz11{ position: absolute; bottom: 10rpx; right:20rpx; width:350rpx; font-size:24rpx;text-align: left; margin-left: 10px; color: #999;  line-height: 20px;margin-top: 10px;}
+.nr1{ width: 80%; position: absolute; top: 15px;  left:7.5%; background: #fff;border-radius: 5px; padding: 10px;}
+.jy01{width: 100%; padding-top: 20px;}
+/*.jg01{border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #5fcaa6;}*/
+.fz12{ width: 750rpx; height: 36px; font-size: 24px;line-height: 36px;margin-bottom: 20px; text-align: center;}
+.fz13{ width: 700rpx; font-size: 14px;line-height: 30px;margin-bottom: 10px; text-align: left; margin-left: 30rpx; color: #666;}
+.zz-t1{width: 100px;height: 100px;}
+.zz-t1 image{width: 100px; left: 50%; margin-left: -50px; height: 100px; z-index: 999; position: absolute;}
+.fz14{ width: 100%; font-size: 14px;line-height: 24px;margin-bottom: 10px; text-align: center;  color: #666;}
+.fz15{ width: 700rpx; height: 24px; font-size: 16px;line-height:24px;margin-bottom: 10px; margin-top: 10px; text-align: left; margin-left: 30rpx;}
+.fz16{ width: 700rpx; font-size: 14px;line-height: 24px;text-align: left; margin-left: 40rpx; color: #666;}
+/*更多课程*/
+.navigator-course{
+  padding: 20rpx 0 20rpx;
+  color:#fff;
+  font-size: 16px;
+   text-align: center;
+   width: 100%;
+   position: fixed;
+   bottom: 0px;
+   background-color:#4bbc93;
+   z-index: 9999
+}
+.color1{ color: #4bbc93!important;}
+.fx-tu{ position:absolute; z-index: 999; width: 25px; height: 25px; right: 36px; top:28px;}
+.fx-tu image{width: 85%; height:85%; position: absolute; z-index: 999; top: 5rpx; left: 5rpx;}
+.fz20{width:750rpx;
+font-size:12px;
+line-height:30px;
+text-align:center;
+left:0rpx;
+color:#999;
+top:191px;
+}
+
+
+.fz21{ width:100rpx;
+height:24px;
+font-size:12px;
+line-height:24px;
+text-align:left;
+position:absolute;
+right:0px;
+bottom:26px;
+}
+.fz22{ width:100rpx;
+height:24px;
+font-size:12px;
+line-height:24px;
+text-align:left;
+position:absolute;
+left:10px;
+bottom:26px;
+}
+
+.mycontent{padding:10rpx 0 ;}
+.swiper-tab{
+  width:100%;text-align: center;line-height: 80rpx;
+}
+.swiper-tab-list{
+  font-size: 30rpx;display: inline-block;width:33.33%;color: #777777;
+}
+.on{color:#333;border-bottom: 5rpx solid #78CA5C;}
+.swiper-box{display:block;height: 100%;width: 100%;overflow: hidden;}
+.swiper-box view {text-align: center;}
+.stop-icon{width:300px;height: 300px;margin:15rpx auto;border-radius: 50%;border:3rpx solid #ccc; margin-top: 20%;}
+.stop-icon .cz01{width:20%; position: absolute; right: 4px; top: -39px; transform: rotate(15deg);} 
+.stop-icon .w-gp{width:300px;height: 300px;border-radius: 50%;} 
+.stop-icon .play-fm{display:block;width:120px;height:120px;}
+.xt01{
+  -webkit-transform: rotate(360deg);
+animation: rotation 10s linear infinite;
+-moz-animation: rotation 10s linear infinite;
+ -webkit-animation-play-state:paused;
+-o-animation: rotation 10s linear infinite;
+ }
+
+.animationSlow {
+  
+  
+  animation-name: rotation; /*动画的名称 */
+  animation-duration: 10s; /*动画从开始到结束的时间*/
+  animation-timing-function: linear; /*动画执行快慢的参数*/
+  animation-iteration-count: infinite; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+  -webkit-animation-name: rotation;
+  -webkit-animation-duration: 10s;
+  
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  
+}
+.animationSlows {
+  
+  
+  animation-name: rotation; /*动画的名称 */
+  animation-duration: 10s; /*动画从开始到结束的时间*/
+  animation-timing-function: linear; /*动画执行快慢的参数*/
+  animation-iteration-count: infinite; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+  -webkit-animation-name: rotation;
+  -webkit-animation-duration: 10s;
+  
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  
+}
+
+
+
+@keyframes rotation {
+  /*开始转的角度*/
+  from {
+    transform: rotate(0deg);
+  }/*结束的角度*/
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*兼容ios*/
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.xz01{-webkit-transform: rotate(360deg);
+animation: rotation 10s linear infinite;
+-moz-animation: rotation 10s linear infinite;
+-webkit-animation: rotation 10s linear infinite;
+-o-animation: rotation 10s linear infinite;
+
+    }
+    
+
+.cat-name{width: 700rpx; font-size: 14px;line-height: 30px;margin-bottom: 10px; text-align: center; margin-left: 30rpx; color: #666; margin-top:30px;}
+.classname{position:absolute; top: 20px; }
+
+.pro{width:100%;margin:0 auto;}
+.proleft{width:20%; text-align: right;font-size: 14px;line-height: 30px;}
+.proright {width: 20%;text-align: left;font-size: 14px;line-height: 30px;}
+.procenter{width:60%;}
+.proleft,.procenter,.proright{display: inline-block;}
+
+.play01{ position: absolute; bottom: 7%; width: 50px; height: 50px; left: 50%; margin-left: -25px; z-index:999; }
+.play01 image{width: 50px; height: 50px;}
+
+.audio {
+    position: relative;
+    width: 750rpx;
+    height: 640rpx;
+    padding: 60rpx 32rpx 52rpx;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    background: rgba(0,0,0,.18);
+}
+
+.audio .bg {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 300%;
+    height: 300%;
+    z-index: -1;
+    filter: blur(40rpx);
+    
+}
+.editor {
+    padding: 32rpx;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 28rpx;
+    background: #fff;
+}
+.editor view {
+    max-width: 100% !important;
+}
+
+.audio .poster {
+    width: 238rpx;
+    height: 336rpx;
+}
+/* 音频滚动条start */
+.control-process {
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.control-process .slider {
+    width: 526rpx;
+}
+.control-process text {
+    font-size: 24rpx;
+    color: #fff;
+}
+/* 音频滚动条end */
+.audio .icon-list {
+    position: relative;
+    margin: 0 auto;
+    line-height: 102rpx;
+}
+
+.audio .icon-list .audio-icon + .audio-icon {
+    margin-left: 72rpx;
+}
+
+.audio .icon-list .pattern {
+    position: absolute;
+    right: 20rpx;
+}
+
+.audio image {
+    width: 64rpx;
+    height: 64rpx;
+    vertical-align: middle;
+}
+
+.audio .audio-play {
+    width: 92rpx;
+    height: 92rpx;
+}
+
+.audio .pattern {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 44rpx;
+    height: 44rpx;
+}
+.hide{
+display: none;
+}
+.show{
+display: block;
+}
+.jdt-box{position: absolute;bottom: 15%;width:100%;left:5px;}
+.play-fm{ position: absolute; width: 120px; top: 30%; left: 50%; z-index: 999;margin-left: -60px; }
+.btn1{ width: 90px; height: 90px; margin: 0px; padding: 0px; border-radius:50px; }
+button::after{
+border:none;
+}
+input{
+outline:none;
+border:none;
+list-style: none;
+}
+.vip01{height: 520px; overflow: hidden;}
+@media screen and (max-height: 568px){
+.stop-icon{width:250px;height: 250px;margin:15rpx auto;border-radius: 50%;border:3rpx solid #ccc; margin-top: 15%;}
+.stop-icon .cz01{width:20%; height: 90%; position: absolute; right: 4px; top: -39px; transform: rotate(15deg);} 
+.stop-icon .w-gp{width:250px;height: 250px;border-radius: 50%;} 
+.stop-icon .play-fm{display:block;width:100px;height:100px;}
+.play-fm{ position: absolute; width: 100px; top: 30%; left: 50%; z-index: 999;margin-left: -50px; }
+
+}
+
+.stfz01{width: 100%; line-height: 30px; text-align: center;  font-size: 16px; position: absolute; top: 5%;}
+

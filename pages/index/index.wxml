@@ -1,0 +1,10 @@
+
+<view class='wd-bj dw'>
+  <view class='logo fd'><image src='/images/logo.jpg'></image></view>
+  <text class='wd-fz01 fl fd'>创易读书会</text>
+  <image class='t1-s' src='/images/t1.png'></image>
+  <button class='fl fd btn1' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo"><image src='/images/btn3.png'></image></button>
+</view>
+
+
+  

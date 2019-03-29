@@ -1,0 +1,84 @@
+{
+  "pages":[
+    
+   "pages/index/index",
+   "pages/index1/index1",
+   "pages/course/course",
+   "pages/mystudy/mystudy",
+   "pages/login02/login02",
+   "pages/list/list",
+   "pages/lists/lists",
+   "pages/conter1/conter1",
+   "pages/conter2/conter2", 
+   "pages/ldy/ldy",
+   "pages/ldys/ldys",
+   "pages/zfy/zfy",
+   "pages/pay/pay",
+   "pages/pmb/pmb",
+   "pages/zfys/zfys",
+   "pages/player/player",
+   "pages/sp1/sp1",
+   "pages/search/search", 
+   "pages/search1/search1", 
+   "pages/book/book",
+   "pages/courselist/courselist",
+   "pages/dtk-st/dtk-st",
+   "pages/wc-dtk/wc-dtk",
+   "pages/wdkc/wdkc",
+   "pages/wdsj/wdsj",
+   "pages/xxjl/xxjl"
+   
+   
+
+   
+  
+   
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window":{
+    "backgroundColor":"#31a030",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "创易读书会 ，有书才有赢",
+    "navigationBarTextStyle":"black" 
+  },
+  "tabBar":{
+    "color":"#666",
+    "selectedColor":"#31a030",
+    "backgroundColor":"#FFF",
+    "borderStyle":"black",
+   "list": [ 
+    {
+      "pagePath": "pages/index1/index1",  
+      "text": "听课",
+      "iconPath": "images/tab_index1.png",
+      "selectedIconPath": "images/tab_index2.png"
+    },
+    {
+      "pagePath": "pages/course/course",
+      "text": "钫元百理",
+      "iconPath": "images/tab_account1.png",
+      "selectedIconPath": "images/tab_account2.png"
+    },
+    {
+      "pagePath": "pages/pmb/pmb",
+      "text": "排行榜",
+      "iconPath": "images/tab_mystudy1.png",
+      "selectedIconPath": "images/tab_mystudy2.png"
+    },
+    {
+      "pagePath": "pages/mystudy/mystudy",
+      "text": "我的",
+      "iconPath": "images/tab_vip1.png",
+      "selectedIconPath": "images/tab_vip2.png"
+    }
+  ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

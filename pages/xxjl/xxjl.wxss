@@ -1,0 +1,48 @@
+.fl{float: left;}
+.fr{ float: right;}
+.dw{ position: relative;}
+.fd{ position: absolute;}
+.done{ display: none;}
+
+.course-grp-name{
+  width: 100%;
+  height: 50rpx;
+  justify-content:space-between;
+  text-align:center;
+  background-color: #fff;
+  margin-top: 25rpx;
+}
+.course-grp-name text{
+  font-size: 40rpx;
+  line-height: 50rpx;
+  color: #000 ;
+ width: 100%;
+ text-align: center;
+  
+}
+.tab-head{ width: 100%; height: 24px; margin-top:20px;}
+.link-zi1{ width:30%; text-align:center; line-height:24px; height:30px; font-size: 14px; color: #333; margin-left:13%;  }
+.xz-active{ font-size: 14px; color: #54c09c; width: 30%; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #54c09c;  margin-left:13%;}
+
+.w-box1{width: 90%; margin-left: 5%; margin-top: 20px;}
+.bt-b{ width: 100%;  font-size: 14px; color: #fff; background-color: #54c09c; line-height: 30px; text-align: center;   border-radius: 4px;}
+.kc-01{width: 100%;margin-top: 15px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color:#d5d5d5; padding-bottom: 10px;}
+.xh1{width: 15px; height: 15px; font-size: 12px; line-height: 15px; color: #fff; background-color: #54c09c;border-radius: 50%; text-align: center; }
+.fz01{ width: 100%; font-size: 14px; color: #333; line-height: 15px; }
+.bt01{ margin-left: 5px; font-size: 14px;line-height: 22px; width: 75%; margin-top: -3px;}
+
+.zj-box{ margin-top: 10px;width:100%}
+.zj-zi1{width: 70%; margin-left: 5%; font-size: 12px; color: #666; line-height: 24px; }
+.t1{ width: 55px; height: 15px;background-color: #5fcaa6; text-align: center; font-size: 12px; line-height:15px;border-radius:5px; color: #fff; margin-top: 5px;}
+.t2{ width: 55px; height: 15px; background-color: #f00; text-align: center; font-size: 12px; line-height:15px; border-radius:5px; color: #fff; margin-top: 5px;}
+.se1{ color: #54c09c; margin-right: 5px;}
+.se2{ color: #54c09c; margin-right: 5px;}
+.sc-box{width: 100%; margin-top: 15px; margin-bottom: 15px;}
+
+.bt-b1{ width: 100%;  font-size: 14px; color: #fff; background-color: #e2b333; line-height: 30px; text-align: center;   border-radius: 4px;}
+
+.xh2{width: 10px; height: 10px; color: #fff; background-color: #54c09c;border-radius: 50%;  }
+.time{ width: 100%; margin-left: 5px; font-size: 14px;line-height: 22px;  margin-top: -15px;border-left-width: 1px; border-left-style: solid; border-left-color:#d5d5d5; padding-left: 15px}
+.pd1{padding-bottom: 30px;}
+.top01{margin-top: 25px; margin-left:10px;}
+

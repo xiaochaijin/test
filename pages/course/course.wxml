@@ -1,0 +1,133 @@
+
+ <!--banner-->
+ <view hidden='{{show}}'>
+  <view class="bannerbox">
+    <!--bannerImg-->  
+    <view class="banner flex">
+      <block wx:for="{{banner.bannerimg}}"  wx:for-index="idx" wx:for-item="item"    >
+        <view class="banner-item">
+         <!--<navigator url="/pages/ldy/ldy?bn_id={{item.bn_id}}"> --> 
+            <image src="{{item.imgurl}}" class="bannerimg {{item.class}}"></image>
+           <!--</navigator>--> 
+        </view>
+      </block> 
+    </view>
+    <!--bannerBtn-->
+    <view  class="banner-btn flex">
+      <block wx:for="{{banner.bannerimg}}" wx:for-index="idx" wx:for-item="item">
+          <view data-index="{{idx}}" bindtap="bindStlBanner" class="{{item.class}}"></view>
+      </block>
+    </view>
+  </view>
+    <view bindtap="search" class='sc-box dw'>
+    <view class='sc-zi1'>搜索相关课程</view>
+    <view class='sc-t1 fd'><image src='/images/sc01.png' class='sc-tb'></image></view>
+  </view>
+ 
+ 
+  
+  <view class="course-grp bottom01" >
+      <view class="course-grp-name flex">
+        <text>【钫元百理】</text>   
+     </view>
+     <block wx:for="{{course}}" wx:for-index="idx" wx:for-item="item">
+      <navigator class='kc-box dw' url='/pages/sp1/sp1?id={{item.id}}'>
+        <view class='kc-pic fd'><image src='{{item.logo}}'></image></view>
+        <view class='r-zi1 fd'>
+          <view class='kc-fz01 fl'>{{item.name}}</view>
+          <view class='kc-fz02 fl'>{{item.introduct}}</view>
+           <view class='kc-fz03 fl'>
+            <text class='fl'> 课程类别：</text>
+            <view class='bq01 fl'>{{item.course.name}}</view>
+           </view>
+         </view>
+      </navigator>
+      </block>
+
+     
+
+
+
+      
+  </view>
+ </view>
+
+
+<!--<block wx:if="{{types==3}}">
+ <view class="top02"  >
+  
+ 
+  
+   
+    </view>
+    
+     <view class="x01 fz12 fl">
+         这是一个汇聚行业精英、大咖、领头人独创观点的阅读空间。创易读书会，每周精选一本创业、管理、职场类精品书籍，为大家分享成名已久的商业奇才们的思维方式，助力创业者、职场人、企业家们获得通往成功的方法论。
+    </view>
+   
+   <view class="course-grp bottom01" >
+
+              <view class="course-grp-item flex">    
+              <block wx:if="{{style==2}}">
+              <block wx:for="{{data}}"  wx:for-index="idx" wx:for-item="item"    >
+              
+                  <navigator class=" flex-col dw top01 x01" url="/pages/conter1/conter1?at_id={{item.at_id}}">
+                    <view  class='fl'><image src="{{item.at_logo}}"></image></view> 
+                    <text class='fz09 fl'>{{item.at_name}}</text>
+                    <text class='fz10 fl'>{{item.at_con}}</text>
+                    <view class='fz11 fl'><text class='fl'>{{item.at_creatime}}上架</text><text wx:if="{{item.at_num==null}}" class='fr'>0次收听                </text><text wx:else class='fr'>{{item.at_num}}次收听</text></view>
+                  </navigator>
+                </block>
+                </block>
+                
+                   <block wx:else>
+              <block wx:for="{{data}}"  wx:for-index="idx" wx:for-item="item"    >
+              
+                  <view class=" flex-col dw top01 x01" bindtap='business'>
+                    <view  class='fl'><image src="{{item.at_logo}}"></image></view> 
+                    <text class='fz09 fl'>{{item.at_name}}</text>
+                    <text class='fz10 fl'>{{item.at_con}}</text>
+                    <view class='fz11 fl'><text class='fl'>{{item.at_creatime}}上架</text><text wx:if="{{item.at_num==null}}" class='fr'>0次收听                </text><text wx:else class='fr'>{{item.at_num}}次收听</text></view>
+                  </view>
+                </block>
+                </block>
+                
+            
+                
+              </view>
+          
+  </view>
+</block>-->
+
+  <view class="top02" hidden='{{showon}}' >
+  
+  
+   <view class="course-grp bottom01" >
+
+              <view class="course-grp-item flex">    
+              <block wx:for="{{article}}"  wx:for-index="idx" wx:for-item="item"    >
+                  <navigator class=" flex-col dw top01 x01" url="/pages/conter1/conter1?at_id={{item.at_id}}">
+                    <view  class='fl'><image src="{{item.at_logo}}"></image></view> 
+                    <text class='fz09 fl'>{{item.at_name}}</text>
+                    <text class='fz10 fl'>{{item.at_con}}</text>
+                    <view class='fz11 fl'><text class='fl'>{{item.at_creatime}}上架</text><text wx:if="{{item.at_num==null}}" class='fr'>0次收听                </text><text wx:else class='fr'>{{item.at_num}}次收听</text></view>
+                  </navigator>
+                </block>
+            
+                
+              </view>
+          </view>
+          
+  </view>
+  <view class='jd-bj' hidden='{{play}}' >
+  <view class='play02' data-index="{{at_id}}" bindtap='{{action}}'><image src='{{palyaction}}'></image></view>
+  <navigator url="/pages/conter1/conter1?at_id={{at_id}}"><view class='bf-zi1'>{{at_name}}</view></navigator>
+  <view class='bf-time'>{{begin}}/{{endtime}}</view>
+  <view class='gb01' bindtap='wrong' hidden='{{wrong}}'><image src='/images/x01.png'></image></view>
+</view>
+
+
+
+
+
+  

@@ -1,0 +1,57 @@
+
+
+ <!-- 导航 -->
+<scroll-view scroll-x="true" class="ip_tab_comtainer x-x1">
+<view class='menu-box'>
+<view class='dao1' wx:for="{{catalogs}}" data-select="{{item.select}}" bindtap="chooseCatalog" data-type="{{item.type_id}}">
+
+<text class="{{item.select == catalogSelect ? 'fz01 jg01':'fz02'}}">{{item.type_name}}</text>
+
+
+
+</view>
+ 
+</view>
+</scroll-view>
+ <view class="top02"  >
+  
+ 
+  
+   
+    </view>
+
+<view class="course-grp bottom01" >
+
+      <view class="course-grp-item flex">    
+      <block wx:for="{{article}}"  wx:for-index="idx" wx:for-item="item"    >
+     
+        <block wx:if="{{style==2}}">
+          <navigator class=" flex-col dw top01" url="/pages/conter1/conter1?at_id={{item.at_id}}">
+            <view  class='fl'><image src="{{item.at_logo}}"></image></view> 
+            <text class='fz09 fl'>{{item.at_name}}</text>
+            <text class='fz10 fl'>{{item.at_con}}</text>
+            <view class='fz11 fl'><text class='fl'>{{item.at_creatime}}上架</text><text wx:if="{{item.at_num==null}}" class='fr'>0次收听</text><text wx:else class='fr'>{{item.at_num}}次收听</text></view>
+          </navigator>
+          </block>
+          <block wx:else>
+          <navigator class=" flex-col dw top01" url="/pages/zfy/zfy?id=3">
+            <view  class='fl'><image src="{{item.at_logo}}"></image></view> 
+            <text class='fz09 fl'>{{item.at_name}}</text>
+            <text class='fz10 fl'>{{item.at_con}}</text>
+            <view class='fz11 fl'><text class='fl'>{{item.at_creatime}}上架</text><text wx:if="{{item.at_num==null}}" class='fr'>0次收听</text><text wx:else class='fr'>{{item.at_num}}次收听</text></view>
+          </navigator>
+          </block>
+        </block>
+     
+         
+      </view>
+  </view>
+  <view class='jd-bj' hidden='{{play}}' >
+  <view class='play02' bindtap='{{action}}'><image src='{{palyaction}}'></image></view>
+  <navigator url="/pages/conter1/conter1?at_id={{at_id}}"><view class='bf-zi1'>{{at_name}}</view></navigator>
+  <view class='bf-time'>{{begin}}/{{endtime}}</view>
+  <view class='gb01' bindtap='wrong' hidden='{{wrong}}'><image src='/images/x01.png'></image></view>
+</view>
+
+
+ 

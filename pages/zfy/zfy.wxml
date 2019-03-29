@@ -1,0 +1,78 @@
+<view id="one" class="box">
+  <view class="logo"><image src="/images/logo.jpg"></image></view>
+  <view class="tab-box">
+    <view class='tab-head'>
+      <view class="link-zi1 fl {{vip1}} vip1" bindtap="vip" data-index="1">个人VIP</view>
+      <view class="link-zi1 fl vip2 {{vip2}}" bindtap="vip" data-index="2">企业VIP</view>
+      <!--<view class="link-zi1 fl vip3 {{vip3}}" bindtap="vip" data-index="3">精英VIP</view>-->
+    </view>
+  
+    <view class="tab-x1 vips1" hidden='{{hidden1}}'>
+        <text class="fz01 fl">【订阅说明】</text>
+        <text class="fz02 fl">个人VIP会员，每天1本书，每年365本；</text>
+        <text class="fz01 fl">【收费细则】</text>
+        <text class="fz03 fl">365元/年</text>
+        
+        <view class="bm1" hidden="{{hidden}}">
+            <view class="fz01 fl">支付码：</view>
+            <view class="fz02 fl"><input class="input x1" name="userName" placeholder="输入支付码，完成申请会员操作" bindinput="userNameInput1"/></view>
+            <text class="fz04 fl fonts">关注"创易读书"公众号,获取支付码</text>
+            <view class='clear'></view>
+        </view>
+        <block wx:if="{{types==2}}">
+        <view class="btn2 fl" style='display:block;' bindtap='payment' data-index="1"> <view class="btn-02">成为个人VIP会员</view></view>
+        </block>
+        <block wx:if="{{types==1}}">
+         <view class="btn2 fl" style='display:block;' bindtap='submit' data-index="1"> <view class="btn-02">提交支付码</view></view>
+         </block>
+        <view class='clear'></view>
+    </view>
+  
+    <view class="tab-x1 vips2"  hidden='{{hidden2}}'>
+        <text class="fz01 fl">【订阅说明】</text>
+        <text class="fz02 fl">企业VIP会员：此类方式为企业团体专属，成为团体VIP，有专属后台，可随意更换听书员工。</text>
+        <text class="fz01 fl">【收费细则】</text>
+        <text class="fz03 fl">
+            <text class='fl'>5人以下：无折扣;</text>
+            <text class='fl'>5-10人：用实际人数*365元，再*9折;</text>
+            <text class='fl'>10人及以上：用实际人数*365元，再*8折;</text>
+            
+        </text>
+        
+        <text class="fz04 fl">说明：<text class="font">关注“创易读书”公众号</text>，后台私信客服咨询，提供注册主账号 +子账号；
+工作时间：工作日9:00-18:00，节假日、周末不提供咨询服务。</text>
+        <view class='clear'></view>
+    </view>
+  
+  
+      <view class="tab-x1 vips3" hidden='{{hidden3}}'>
+          <text class="fz01 fl">【订阅说明】</text>
+          <text class="fz02 fl">可畅听精选图书，每周一本，每年52本精选图书；同时，也可畅听个人VIP365本图书。即共365+52=417本。</text>
+          <text class="fz01 fl">【收费细则】</text>
+          <text class="fz03 fl">1999元/年</text>
+          
+       <view class="bm1" hidden="{{hidden}}">
+          <view class="fz01 fl">支付码：</view>
+          <view class="fz02 fl"><input class="input x1" name="userName" placeholder="输入支付码，完成申请会员操作" bindinput="userNameInput3"/></view>
+          <text class="fz04 fl fonts">关注"创易读书"公众号,获取支付码</text>
+          <view class='clear'></view>
+        </view>
+         <block wx:if="{{types==2}}">
+        <view class="btn2 fl" style='display:block;' bindtap='payment' data-index="2"> <view class="btn-02">成为精英VIP会员</view></view>
+        </block>
+        <block wx:if="{{types==1}}">
+        <view class="btn2 fl" style='display:block;' bindtap='submit' data-index="2"> <view class="btn-02">提交支付码</view></view>
+        </block>
+     </view>  
+     <view class='clear'></view>
+  </view>
+  
+ 
+</view>
+ <view class='jd-bj' hidden='{{play}}' >
+  <view class='play02' bindtap='{{action}}'><image src='{{palyaction}}'></image></view>
+  <navigator url="/pages/conter1/conter1?at_id={{at_id}}"><view class='bf-zi1'>{{at_name}}</view></navigator>
+  <view class='bf-time'>{{begin}}/{{endtime}}</view>
+  <view class='gb01' bindtap='wrong' hidden='{{wrong}}'><image src='/images/x01.png'></image></view>
+</view>
+

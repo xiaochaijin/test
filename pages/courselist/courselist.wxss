@@ -1,0 +1,224 @@
+/**index.wxss**/
+.container{
+  height: 500rpx;
+  display: flex;
+}
+
+.pageContainer{
+  font-size: 14rpx;
+  color: #fff;
+}
+/*banner*/
+.bannerbox{
+  height: 300rpx;
+  width:750rpx;
+  position: relative;
+  margin-top:70rpx;
+
+}
+.banner{
+  flex-direction:row;
+  align-items:center;
+}
+.bannerimg{
+  width:750rpx;
+  height: 300rpx;
+  display: none;
+}
+.banner .active{
+  width:750rpx;
+  height: 300rpx;
+  display: inline-block;
+}
+.banner-btn{
+  width:100%;
+  position: absolute;
+  bottom:20rpx;
+  flex-direction:row;
+  justify-content:center;
+}
+.banner-btn view{
+  width:15rpx;
+  height: 15rpx;
+  margin: 10rpx;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 50%;
+}
+.banner-btn  .active{
+  background-color: #9e9caa;
+}
+
+/*nav*/
+.nav{
+ flex-wrap:wrap;
+ justify-content:center;
+}
+.nav-item{
+  margin: 30rpx 50rpx 10rpx;
+  width:80rpx;
+}
+.nav-item image{
+  width:80rpx;
+  height: 80rpx;
+  border-radius:50%;
+}
+.nav-item text{
+  width:80rpx;
+  font-size: 16rpx;
+  color:#000;
+  display: inline-block;
+  text-align: center;
+}
+
+/*courseGrp*/
+.course-grp {
+  flex-wrap:wrap;
+  justify-content: space-around;
+ 
+} 
+.course-grp-name{
+  width: 100%;
+  height: 50rpx;
+  justify-content:space-between;
+  text-align:center;
+  background-color: #fff;
+  margin-top: 25rpx;
+}
+.course-grp-name text{
+  font-size: 40rpx;
+  line-height: 50rpx;
+  color: #000 ;
+ width: 100%;
+ text-align: center;
+  
+}
+.course-grp-name navigator{
+  font-size: 24rpx;
+  color:#999;
+  padding-right: 20rpx;
+}
+
+
+.course-grp-item navigator{
+  width:700rpx;
+}
+
+/*更多课程*/
+.navigator-course{
+  padding: 10rpx 0 40rpx;
+  color:#4bbc93;
+  font-size: 24rpx;
+}
+.color1{ color: #4bbc93!important;}
+
+.ip_tab_comtainer {
+    width: 100%;
+    padding: 20rpx 0 0;
+    white-space: nowrap;
+    display: flex;
+     position: fixed;
+    top: 0px;
+    height: 70rpx;
+    float: left;
+    z-index: 9999;
+    background-color: #fff;
+}
+.menu-box{ width: 100%; overflow: hidden; height: 70rpx; }
+.ul-box{height:60rpx; }
+.jg01{border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #5fcaa6;}
+.dao1{ margin-left:25px; margin-right:25px; float: left; height: 60rpx;}
+.fz01{ font-size: 32rpx; line-height: 60rpx;  font-weight: bold; }
+.dao2{ margin-left: 25rpx; margin-right: 25rpx; float: left; height: 60rpx;}
+.fz02{ font-size: 28rpx; line-height: 60rpx; }
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.x-book{width: 100%; height: 500rpx; background-color: #f5f6f8; position: relative;}
+.di1{position: absolute; width: 80%; height: 100rpx; left: 50%; margin-left: -40%; bottom: 20rpx;}
+.di1 image{width: 100%; height: 100%; }
+.x1-w{position: absolute; width: 300rpx; height: 100rpx; left: 50%; margin-left: -150rpx; top: 60rpx; }
+.x1{position: absolute; width: 300rpx; height: 10rpx; }
+.x1 image{width: 100%; height: 100%; }
+.fz03{ width:300rpx; font-size: 32rpx;text-align: center; font-weight:bold;}
+.fz04{ width:300rpx; font-size: 24rpx;text-align: center; color: #b4b6b5;}
+.fl{float: left;}
+.fr{ float: right;}
+.dw{ position: relative;}
+.tj-box1{position: absolute; width: 250px; left: 50%; margin-left: -125px; bottom: 13%; z-index: 999;}
+.tu1{ width: 160rpx; height: 220rpx; margin-left: 20rpx;}
+.tu1 image{width: 100%; height: 100%;}
+
+.fz05{ width:100%; font-size:16px; text-align: center; line-height: 24px; margin-bottom: 5px; }
+.fz06{ width:132px; font-size: 14px;text-align: left; margin-left: 8px; height: 60px; overflow: hidden; line-height: 20px; color: #666; margin-top: 10px;}
+.fz07{ width:132px; font-size: 24rpx;text-align: center; margin-left: 8px; color: #666;  line-height: 30px;}
+.fz08{width:730rpx; font-size: 24rpx;text-align: left; padding-left: 30rpx;color: #666;  line-height: 30px;}
+.fz09{ width:460rpx; height:60rpx; font-size:16px;text-align: left; margin-left: 15px; color: #333;  line-height: 30px;}
+
+
+.fz10{ width:460rpx; font-size:24rpx;text-align: left; margin-left: 10px; color: #666;  line-height: 20px;margin-top: 5px; height:80px; overflow: hidden; }
+
+.fz11{ position: absolute; bottom:33rpx; right:20rpx; width:460rpx; font-size:24rpx;text-align: left; margin-left: 10px; color: #999;  line-height: 20px;margin-top: 10px;}
+.top01{margin-top: 40rpx; padding-bottom:40rpx;}
+.bottom01{border-bottom-width: 20px; border-bottom-style: solid; border-bottom-color: #f5f6f8; padding-bottom: 25rpx;}
+
+.wd-bj{ width: 100%; height: 1100rpx;}
+.logo{width: 100px; height: 100px; left: 50%; top: 30px; margin-left: -50px; border: 2px solid #FFF; box-shadow: 0 5px 10px rgba(0, 0, 0, .1); transform: translate3d(0, -1px, 0);}
+.logo image{width:100%; height: 100px;}
+
+.wd-fz01{ width: 100%; font-size: 16px;line-height: 24px;top: 142px; text-align: center;  color: #666; }
+.wd-fz02{ width: 100%; font-size: 14px;line-height: 24px;top: 135px; text-align: center;  color: #999; }
+.btn1{width: 300px; height: 50px;  bottom: 20px;  margin-left: -112px; z-index: 999;}
+.btn1 image{width: 100%; height: 50px; z-index: 999; position: absolute;}
+.btn1,button::after{
+border: none; background-color: #fff; z-index: 2; overflow: visible; 
+}
+.dw{ position: relative;}
+.fd{ position:absolute;}
+
+.page{ padding-left: 5%; padding-right: 5%; margin-top: 10px; width:90%;  font-size: 14px;color: #333; height: 50px;line-height: 50px;border: 1px #e5e5e5 solid;}
+.btn01{line-height: 24px; font-size: 14px; padding-left: 10px; padding-right: 10px; text-align: center; color: #fff; background-color: #5fcaa6;  border-radius: 4px; margin-top: 13px;}
+.x01{border-bottom: 1px #f2f2f2 solid;}
+.top02{ margin-top: 50px;}
+.more1{ font-size: 12px; color: #999; margin-right: 10px;   }
+.tjw1{ width: 100%; height: 70px;float: left;margin-bottom: 5%;}
+.tjw1 .gg1{ width: 100%;  height: 70px;}
+.ldy01{ position:absolute; z-index: 999; width: 100%; height:100%;}
+.ldy01 image{width: 100%; height:132%; position: absolute; z-index: 999; top: 0rpx; left: 0rpx;}
+
+
+
+
+.jd-bj{width:90%;z-index:999; height:60px;background-color:#000;filter:alpha(Opacity=20);-moz-opacity:0.2;opacity: 0.8; position:
+ fixed; bottom:15px; left:5%; border-radius:30px; }
+.play02 { position: absolute; bottom: 10px; width: 40px; height: 40px; left: 10px; z-index:999; }
+.play02 image { width: 40px; height: 40px; }
+.bf-zi1{position: absolute;  width: 50%; height: 60px; left:50px; z-index:999; font-size: 14px; color: #fff; line-height: 60px; overflow: hidden;}
+.bf-time{position: absolute;  width: 25%; height: 60px; right: 15px; z-index:999; font-size: 12px; color: #fff; line-height: 60px; overflow: hidden;}
+.gb01 { position: absolute; bottom: 24.5px; width: 15px; height: 15px; right: 10px; z-index:999; }
+.gb01 image { width: 15px; height: 15px; }
+
+.fz12{ width: 90%; font-size:14px;text-align: left; margin-left: 5%; color: #333;  line-height: 20px;margin-top: 15px; padding-bottom: 10px;  }
+
+@media screen and (max-height: 568px){
+.dao1{ margin-left:30px; margin-right:25px; float: left; height: 60rpx;}
+}
+
+
+.sc-box{ width: 70%; margin-left: 10%; margin-top: 10px; margin-bottom: 10px; height: 28px;  border-radius: 14px; border: 1px solid #f5f6f8; padding: 0px 5%; }
+.sc-zi1{ font-size: 12px; line-height: 28px; color: #999}
+.sc-t1{ width: 20px; top: 3px; right: 10px;}
+.sc-tb{width: 20px; height: 20px;}
+.done{ display: none;}
+
+
+.kc-box{ width: 95%; margin-left: 2.5%; border-radius:5px; border:1px solid #f2f2f2; height: 160px; margin-top: 20px;
+box-shadow: 0 5px 5px rgba(0, 0, 0, .1); transform: translate3d(0, 0px, 0); }
+.kc-pic{width: 30%; height: 140px; top: 10px; left:10px;}
+.kc-pic image{width: 100%; height: 140px;border-radius:5px;}
+.r-zi1{ width: 58%;right: 5%;height: 140px; top: 10px;}
+.kc-fz01{ width:100%; font-size:16px;text-align: left; color: #000;  line-height: 24px;}
+.kc-fz02{ width:100%; font-size:24rpx;text-align: left; color: #666;  line-height: 20px;margin-top: 5px; height:80px; overflow: hidden; margin-top: 10px; }
+.kc-fz03{ position: absolute; bottom:5px;  width:100%; font-size:12px;text-align: left;  color: #999; line-height: 20px;}
+.bq01{ background-color:#9e9caa; font-size: 12px; line-height: 20px; padding: 0 10px; margin-left: 10px;border-radius:5px; color: #fff;}

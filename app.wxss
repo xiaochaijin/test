@@ -1,0 +1,91 @@
+/**app.wxss**/
+page {
+  background-color: #fff;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+
+.page-body {
+  padding: 20rpx 0;
+}
+
+.btn-area{
+  margin-top: 60rpx;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+}
+
+.pageContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  box-sizing: border-box;
+} 
+.flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+/*head   search*/
+.pageContainer .search{
+  width: 735rpx;
+  height: 65rpx;
+  padding: 12.5rpx 15rpx 12.5rpx 15rpx;
+  background: #fff;
+}
+.pageContainer .search-left{
+  flex: 15;
+  background: #fff;
+  text-align: left;
+  border: 1px solid #D6D6D6; 
+}
+.pageContainer .search-left input{
+  display: inline-block;
+  height: 65rpx;
+  color:#666;
+  font-size: 26rpx;
+}
+.search-placeholder{
+  color: #666;
+  line-height: 26rpx;
+ 
+}
+.pageContainer .search .search-left image{
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+  padding: 15rpx 15rpx 15rpx 20rpx;
+}
+.pageContainer .search .search-right{
+  flex: 2;
+  margin-left:20rpx;
+}
+.pageContainer .search .search-right image{
+  width: 35rpx;
+  height: 35rpx;
+  padding: 15rpx;
+}
+/*ad*/
+.ad ,.course-grp-item{
+  width:710rpx;
+  
+  margin-left: 30rpx;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.ad navigator:first-child image{
+  width:200px;
+  height:300rpx;
+}
+.ad image,.course-grp-item image{
+  width:200rpx;
+  height: 300rpx;
+  float: left;
+  border-radius:5px;
+}
+button::after{ border: none; background-color: #fff; }

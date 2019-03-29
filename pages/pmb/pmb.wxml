@@ -1,0 +1,242 @@
+<!-- 个人排行 -->
+<view class="{{person}}">
+<view class='x1-w'>
+     <view class='x1'><image src='/images/x1.png'/></view>
+     <text class='fz03 fl'>创易读书会月个人排行榜</text>
+</view>
+<view class="date">
+    <picker mode="date" value="{{date}}" start="{{start}}" end="{{end}}" bindchange="bindDateChange" fields="month">
+      <view class="picker">
+        {{date}}
+      </view>   
+    </picker>
+    <image src='/images/sj.png'/>
+  </view>
+ <view hidden='{{hidden}}'>
+<view class='pmbox'>
+<view class='gr-pm'>
+    <view class='tj-zi fl'>{{type.user_nike}}</view>
+    <view class='tj-time fl'>
+    <block wx:if="{{type.order==0}}">
+      <view class='fl m1'>暂无排名</view>
+    </block>
+    <block wx:else>
+      <view class='fl m1'>第{{type.order}}名</view>
+      <view class='fl'>{{type.num}}</view>
+    </block>
+      
+    </view>
+  </view>
+
+
+<block wx:for="{{list}}"  wx:for-index="idx" wx:for-item="item">
+<block wx:if="{{idx==0}}">
+  <view class='pm-b dw'>
+   <text class='pm-fz01 fl'>{{idx+1}}</text>
+    <view class='pm1'><image src='/images/pm1.png'></image></view>
+    <view class='tx1 fl'><image src='{{item.user_logo}}'></image></view>
+    <view class='zi1 fl'>{{item.user_nike}}</view>
+    <view class='time fr'>{{item.num}}</view>
+  </view>
+</block>
+<block wx:elif="{{idx==1}}">  
+  <view class='pm-b dw'>
+   <text class='pm-fz02 fl'>{{idx+1}}</text>
+    <view class='pm1'><image src='/images/pm2.png'></image></view>
+    <view class='tx1 fl'><image src='{{item.user_logo}}'></image></view>
+    <view class='zi1 fl'>{{item.user_nike}}</view>
+    <view class='time fr'>{{item.num}}</view>
+  </view>
+</block>
+<block wx:elif="{{idx==2}}">
+  <view class='pm-b dw'>
+   <text class='pm-fz03 fl'>{{idx+1}}</text>
+    <view class='pm1'><image src='/images/pm3.png'></image></view>
+    <view class='tx1 fl'><image src='{{item.user_logo}}'></image></view>
+    <view class='zi1 fl'>{{item.user_nike}}</view>
+    <view class='time fr'>{{item.num}}</view>
+  </view>
+</block>
+<block wx:else>
+    <view class='pm-b dw'> 
+      <text class='pm-fz04 fl'>{{idx+1}}</text> 
+        <view class='tx1 fl'><image src='{{item.user_logo}}'></image></view>
+        <view class='zi1 fl'>{{item.user_nike}}</view>
+        <view class='time fr'>{{item.num}}</view>
+      </view>
+</block>
+
+
+  
+  </block>
+</view>
+</view>
+
+
+</view>
+
+<!-- 企业排行 -->
+<view class="{{company}}">
+<view class='x1-w'>
+     <view class='x1'><image src='/images/x1.png'/></view>
+     <text class='fz03 fl'>{{company_name}}企业排行榜</text>
+    
+</view>
+
+ <view class='tab-head'>
+      <view class="link-zi1 fl {{phb1}}" bindtap="phb" data-index="1">企业读书排行</view>
+      <view class="link-zi1 fl {{phb2}}" bindtap="phb" data-index="2">考试得分排行</view>
+ </view>
+ 
+ <view hidden='{{tingshu}}'>
+
+<view class='pmbox'>
+<view class="date">
+    <picker mode="date" value="{{date}}" start="{{start}}" end="{{end}}" bindchange="bindDateChange" fields="month">
+      <view class="picker">
+        {{date}}
+      </view>   
+    </picker>
+    <image src='/images/sj.png'/>
+  </view> 
+<view class='gr-pm'>
+    <view class='tj-zi fl'>{{types.user_nike}}</view>
+    <view class='tj-time fl'>
+    <block wx:if="{{types.order==0}}">
+      <view class='fl m1'>暂无排名</view>
+    </block>
+    <block wx:else>
+      <view class='fl m1'>第{{types.order}}名</view>
+      <view class='fl'>{{types.num}}</view>
+    </block>
+      
+    </view>
+</view>
+
+
+<block wx:for="{{lists}}"  wx:for-index="idx" wx:for-item="item">
+
+<block wx:if="{{idx==0}}">
+  <view class='pm-b dw'>
+   <text class='pm-fz01 fl'>{{idx+1}}</text>
+    <view class='pm1'><image src='/images/pm1.png'></image></view>
+    <view class='tx1 fl'><image src='{{item.user_logo}}'></image></view>
+    <view class='zi1 fl'>{{item.user_nike}}</view>
+    <view class='time fr'>{{item.num}}</view>
+  </view>
+</block>
+<block wx:elif="{{idx==1}}">
+  <view class='pm-b dw'>
+   <text class='pm-fz02 fl'>{{idx+1}}</text>
+    <view class='pm1'><image src='/images/pm2.png'></image></view>
+    <view class='tx1 fl'><image src='{{item.user_logo}}'></image></view>
+    <view class='zi1 fl'>{{item.user_nike}}</view>
+    <view class='time fr'>{{item.num}}</view>
+  </view>
+</block>
+<block wx:elif="{{idx==2}}">
+  <view class='pm-b dw'>
+   <text class='pm-fz03 fl'>{{idx+1}}</text>
+    <view class='pm1'><image src='/images/pm3.png'></image></view>
+    <view class='tx1 fl'><image src='{{item.user_logo}}'></image></view>
+    <view class='zi1 fl'>{{item.user_nike}}</view>
+    <view class='time fr'>{{item.num}}</view>
+  </view>
+</block>
+<block wx:else>
+    <view class='pm-b dw'>
+      <text class='pm-fz04 fl'>{{idx+1}}</text>
+        <view class='tx1 fl'><image src='{{item.user_logo}}'></image></view>
+        <view class='zi1 fl'>{{item.user_nike}}</view>
+        <view class='time fr'>{{item.num}}</view>
+      </view>
+</block>
+
+
+  
+  </block>
+</view>
+</view>
+
+ <view hidden='{{defen}}'>
+
+<view class='pmbox'>
+<view class="date">
+    <picker  bindchange="bindPickerChanges" value="{{index}}"  range="{{array}}">
+      <view class="picker">
+        {{array[index]}}  
+      </view>   
+    </picker>
+    <image src='/images/sj.png'/>
+  </view> 
+<view class='gr-pm'>
+    <view class='tj-zi fl'>{{user.user_nike}}</view>
+    <view class='tj-time fl'>
+    <block wx:if="{{user.order==0}}">
+      <view class='fl m1'>暂无排名</view>
+    </block>
+    <block wx:else> 
+      <view class='fl m1'>第{{user.order}}名</view>
+      <view class='fl'>{{user.score}}分</view>
+    </block>
+      
+    </view> 
+</view>
+
+<!--得分排行部分-->
+
+<block wx:for="{{score}}"  wx:for-index="idx" wx:for-item="item">
+
+<block wx:if="{{idx==0}}">
+  <view class='pm-b dw'>
+   <text class='pm-fz01 fl'>{{idx+1}}</text>
+    <view class='pm1'><image src='/images/pm1.png'></image></view>
+    <view class='tx1 fl'><image src='{{item.user[0].user_logo}}'></image></view>
+    <view class='zi1 fl'>{{item.user[0].user_nike}}</view>
+    <view class='time fr'>{{item.score}}分</view>
+  </view>
+</block>
+<block wx:elif="{{idx==1}}">
+  <view class='pm-b dw'>
+   <text class='pm-fz02 fl'>{{idx+1}}</text>
+    <view class='pm1'><image src='/images/pm2.png'></image></view>
+    <view class='tx1 fl'><image src='{{item.user[0].user_logo}}'></image></view>
+    <view class='zi1 fl'>{{item.user[0].user_nike}}</view>
+    <view class='time fr'>{{item.score}}分</view>
+  </view>
+</block>
+<block wx:elif="{{idx==2}}">
+  <view class='pm-b dw'>
+   <text class='pm-fz03 fl'>{{idx+1}}</text>
+    <view class='pm1'><image src='/images/pm3.png'></image></view>
+    <view class='tx1 fl'><image src='{{item.user[0].user_logo}}'></image></view>
+    <view class='zi1 fl'>{{item.user[0].user_nike}}</view>
+    <view class='time fr'>{{item.score}}分</view>
+  </view>
+</block>
+<block wx:else>
+    <view class='pm-b dw'>
+      <text class='pm-fz04 fl'>{{idx+1}}</text>
+         <view class='tx1 fl'><image src='{{item.user[0].user_logo}}'></image></view>
+    <view class='zi1 fl'>{{item.user[0].user_nike}}</view>
+    <view class='time fr'>{{item.score}}分</view>
+      </view>
+</block>
+
+
+  
+  </block>
+</view>
+</view>
+</view>
+
+
+
+
+ <view class='jd-bj' hidden='{{play}}' >
+  <view class='play02' bindtap='{{action}}'><image src='{{palyaction}}'></image></view>
+  <navigator url="/pages/conter1/conter1?at_id={{at_id}}"><view class='bf-zi1'>{{at_name}}</view></navigator>
+  <view class='bf-time'>{{begin}}/{{endtime}}</view>
+  <view class='gb01' bindtap='wrong' hidden='{{wrong}}'><image src='/images/x01.png'></image></view>
+</view>
+

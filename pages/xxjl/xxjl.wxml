@@ -1,0 +1,91 @@
+
+<!-- 企业排行 -->
+<view class="course-grp bottom01" >
+   <view class="course-grp-name flex">
+        <text>【学习记录】</text>   
+     </view>
+</view>
+
+ <view class='tab-head'>
+      <view class="link-zi1 fl {{listen1}}" bindtap="listen" data-index="1">听课记录</view>
+      <view class="link-zi1 fl {{listen2}}" bindtap="listen" data-index="2">听书记录</view>
+ </view>
+
+ <!-- 听课记录 -->
+<view hidden="{{tingke}}">
+ <view class='w-box1 '>
+   <view class='bt-b' >本周记录</view>
+  <block wx:for="{{record}}" wx:for-index="idx" wx:for-item="item">
+   <view class='kc-01 fl'> 
+     <view class='fz01'>
+     <text class='xh1 fl'>{{idx*1+1}}</text>
+     <text class='bt01 fl'>{{item.name}}</text> 
+     </view> 
+     <block wx:for="{{item.record}}" wx:for-index="idxs" wx:for-item="items">
+     <view class='zj-box fl'>
+        <view class='zj-zi1 fl'><text class='se1'>[第{{idxs*1+1}}节]</text>{{items.name}}</view>
+        <block wx:if="{{items.videos[0].status==2}}">
+        <view class='fr t1'>已播完</view>
+        </block>
+        <block wx:if="{{items.videos[0].status==1}}">
+        <view class='fr t2'>未播完</view>
+        </block>
+        
+     </view>
+      
+     </block>
+   </view> 
+</block>
+   
+
+
+ </view>
+</view>
+
+
+ <!-- 听书记录 -->
+<view hidden='{{tingshu}}'>
+ <view class='w-box1 fl '>
+    <view class='bt-b' >本周记录</view>
+  <block wx:for="{{data}}" wx:for-index="idx" wx:for-item="item">
+   <view class='kc-01 fl'>
+     <view class='fz01'>
+     <text class='xh1 fl'>{{idx*1+1}}</text>
+     <text class='bt01 fl'>{{item.at_name}}</text>
+    <block wx:if="{{item.shouting==2}}">
+    <view class='fr t2'>未听完</view>
+    </block>
+    <block wx:if="{{item.shouting==1}}"> 
+    <view class='fr t1'>已听完</view>
+    </block>
+
+     </view>      
+   </view> 
+   </block>
+
+   
+
+  
+
+   
+<view class='sc-box fl '>
+
+<view class='bt-b1' >本周听书时长</view>
+<view class='top01'>
+<block wx:for="{{list}}" wx:for-index="idx" wx:for-item="item">
+  <text class='xh2 fl'></text>
+  <text class='time fl pd1'>{{item.day}}  星期{{item.week}} 总时长：<text class='se2'>{{item.time}}</text></text>
+</block>
+  
+</view>
+
+</view>
+</view>
+
+
+       
+
+
+
+
+ </view>

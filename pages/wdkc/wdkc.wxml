@@ -1,0 +1,50 @@
+
+ <!--banner-->
+
+ 
+ 
+  
+  <view class="course-grp bottom01" >
+      <view class="course-grp-name flex">
+        <text>【我的课程】</text>   
+     </view>
+     <block wx:for="{{data}}" wx:for-index="idx" wx:for-item="item">
+      <navigator class='kc-box dw' url='/pages/sp1/sp1?id={{item.id}}'>
+        <view class='kc-pic fd'><image src='{{item.courses.logo}}'></image></view>
+        <view class='r-zi1 fd'>
+          <view class='kc-fz01 fl'>{{item.courses.name}}</view>
+          <view class='kc-fz02 fl'>{{item.courses.introduct}}</view>
+           <view class='kc-fz03 fl'>
+            <text class='fl'> 课程类别：</text>
+            <view class='bq01 fl'>{{item.courses.typename}}</view>
+              <block wx:if="{{item.status==2}}">
+             <view class='fr t1'>已听完</view>
+             </block>
+             <block wx:else>
+             <view class='fr t2'>未听完</view>
+             </block>
+           </view>
+         </view>
+      </navigator>
+    </block>
+
+      
+
+
+      
+  </view>
+
+
+
+  <view class='jd-bj' hidden='{{play}}' >
+  <view class='play02' data-index="{{at_id}}" bindtap='{{action}}'><image src='{{palyaction}}'></image></view>
+  <navigator url="/pages/conter1/conter1?at_id={{at_id}}"><view class='bf-zi1'>{{at_name}}</view></navigator>
+  <view class='bf-time'>{{begin}}/{{endtime}}</view>
+  <view class='gb01' bindtap='wrong' hidden='{{wrong}}'><image src='/images/x01.png'></image></view>
+</view>
+
+
+
+
+
+  

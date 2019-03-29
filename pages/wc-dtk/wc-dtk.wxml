@@ -1,0 +1,79 @@
+<view class="fs-box dw">
+   <view class='fs-tu1 fd'>
+    <image src='/images/jp.png' class='pic1'></image>
+    <text class='fs-z1 fd'>50分</text>
+   </view>
+
+   
+
+</view>
+
+<view class='dtk-box'>
+  <view class='ts-box'>
+    <view class='left-zi1 fl'>答题卡</view>
+    <view class='ts1 fr'>
+      <view class='green fl'></view>
+      <text class='d1 fl'>正确</text> 
+    </view>
+    <view class='ts1 fr'>
+      <view class='red fl'></view>
+      <text class='d1 fl'>错误</text> 
+    </view>
+  </view>
+ 
+ <view class='xx-k'>
+      <view class='kw-box fl'>
+        <navigator class='k1 se1 '>1</navigator>
+      </view>
+      <view class='kw-box fl'>
+        <navigator class='k1 se1 '>2</navigator>
+      </view>
+      <view class='kw-box fl'>
+        <navigator class='k1 se1 '>3</navigator>
+      </view>
+      <view class='kw-box fl'>
+        <navigator class='k1 se2 '>4</navigator>
+      </view>
+      <view class='kw-box fl'>
+        <navigator class='k1 se2 '>5</navigator>
+      </view>
+
+      <view class='kw-box fl'>
+        <navigator class='k1 se1 '>6</navigator>
+      </view>
+      <view class='kw-box fl'>
+        <navigator class='k1 se1 '>7</navigator>
+      </view>
+      <view class='kw-box fl'>
+        <navigator class='k1 se1 '>8</navigator>
+      </view>
+      <view class='kw-box fl'>
+        <navigator class='k1 se2 '>9</navigator>
+      </view>
+      <view class='kw-box fl'>
+        <navigator class='k1 se2 '>10</navigator>
+      </view>
+    
+ 
+ </view>
+
+</view>
+
+
+<view>
+
+
+<view class='tm-zi1 fl'> 1、（单选题）哈就开始复活节可视电话康师傅就开始恢复健康的是恢复健康的撒谎九分昆德拉会尽快来访的数据库  </view>       
+</view>
+  <!-- 答案解析 -->
+    <view class='jx-box fl'>
+    <view class='zi-box fl'>
+      <text class='bt02'>答案解析</text>
+      <text class='fz03'>
+      可视电话康师傅就开始恢复健康的是恢谎可视电话康师傅就开始恢复健康的是恢谎可视电话康师傅就开始
+      </text>    
+    </view>
+    </view>
+  <!-- 答案解析 end -->
+
+
